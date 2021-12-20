@@ -295,6 +295,50 @@ header .header-image-container .middle {
   }
 }
 
+/* Style the container with a rounded border, grey background and some padding and margin */
+#testimonials {
+  /* Clear floats after containers */
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  /* Increase the font-size of a span element */
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+}
+
+#testimonials .container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+#testimonials .container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#testimonials .container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+#testimonials .container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  #testimonials .container {
+    text-align: center;
+  }
+  #testimonials .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -724,20 +768,18 @@ footer img {
 @media only screen and (max-width: 850px) {
   header .header-image-text {
     position: absolute;
-    top: 25%;
-    left: 10%;
-    z-index: 10;
-    line-height: 4rem;
+    width: 100%;
   }
   header .header-image-text h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   header .header-image-text p {
-    font-size: 2rem;
+    line-height: 1.5em;
+    font-size: 1.5rem;
   }
   header .header-image-container {
     height: 500px;
-    width: 100%;
+    width: auto;
   }
   header .header-image-container img {
     -o-object-fit: cover;
@@ -747,12 +789,7 @@ footer img {
 }
 
 @media only screen and (max-width: 814px) {
-  .services p {
-    text-align: center;
-    margin-bottom: 0;
-    font-weight: bold;
-  }
-  .services div {
+  .services {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -760,21 +797,17 @@ footer img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .services div img {
-    margin: 0 auto;
-  }
-  .services div p {
-    text-align: left;
-    width: 90%;
-    padding-left: 0;
-    margin: 0 auto;
+  .services div {
+    width: 80%;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(153, 153, 153, 0.4);
+            box-shadow: 0 2px 3px 0 rgba(153, 153, 153, 0.4);
   }
   .about div:first-of-type {
     width: 80%;
