@@ -297,6 +297,7 @@ header .header-image-container .middle {
 
 /* Style the container with a rounded border, grey background and some padding and margin */
 #testimonials {
+  padding-bottom: 50px;
   /* Clear floats after containers */
   /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
   /* Increase the font-size of a span element */
@@ -308,7 +309,7 @@ header .header-image-container .middle {
   background-color: #eee;
   border-radius: 5px;
   padding: 16px;
-  margin: 16px 0;
+  margin: 16px auto;
 }
 
 #testimonials .container::after {
@@ -361,6 +362,12 @@ header .header-image-container .middle {
 
 .services div p {
   text-align: center;
+}
+
+.services-contact-us {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .del-services .container {
